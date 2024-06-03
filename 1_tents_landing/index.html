@@ -193,6 +193,27 @@
     
 
 
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector('.header');
+    
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+            if (scrollTop > lastScrollTop) {
+                // Scrolling down
+                header.style.top = '-100px'; // Hide the header
+            } else {
+                // Scrolling up
+                header.style.top = '0'; // Show the header
+            }
+    
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+        });
+    </script>
+
+
+
     <script src="./assets/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
         integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
