@@ -1174,9 +1174,11 @@ body {
   }
   .third-section__img {
     width: 400px;
+    height: 500px;
   }
   .sixth-section__iframe {
     width: 400px;
+    height: 370px;
   }
 }
 
@@ -1193,6 +1195,13 @@ body {
   .main-section__btn {
     font-size: 10px;
     padding: 12px 17px;
+  }
+  .second-section__card {
+    margin-bottom: 0;
+  }
+  .second-section__card img {
+    width: 390px;
+    height: 360px;
   }
   .team-section__modal {
     width: 290px;
@@ -1252,7 +1261,7 @@ body {
   }
   .second-section__card img {
     width: 260px;
-    height: 310px;
+    height: 250px;
   }
   .third-section__img {
     width: 260px;
@@ -1280,6 +1289,9 @@ body {
   .fifth-section {
     margin-bottom: 50px;
   }
+  .sixth-section {
+    margin-bottom: 50px;
+  }
   .sixth-section__title {
     font-size: 32px;
     margin-bottom: 20px;
@@ -1298,6 +1310,7 @@ body {
   }
   .sixth-section__iframe {
     width: 260px;
+    height: 260px;
   }
   .mobile-menu__button {
     width: 50px;
