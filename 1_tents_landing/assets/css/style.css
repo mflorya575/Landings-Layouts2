@@ -677,12 +677,12 @@ body {
 }
 
 .mobile-menu__tent {
-  width: 30px;
+  width: 50px;
 }
 
 .mobile-menu__t1 {
   text-align: center;
-  font-size: 26px;
+  font-size: 32px;
   color: #94d2f6;
 }
 
@@ -694,8 +694,12 @@ body {
 
 .mobile-menu__tel-tel {
   background: #e4e4e4;
-  padding: 25px;
+  padding: 20px;
   border-radius: 50%;
+}
+
+.mobile-menu__button {
+  width: 55px;
 }
 
 .main-section {
@@ -1305,6 +1309,12 @@ body {
     font-size: 10px;
   }
   .mobile-menu__tel-tel {
-    padding: 16px;
+    padding: 12px;
+  }
+  .mobile-menu__button {
+    width: 40px;
+  }
+  .mobile-menu__tent {
+    width: 37px;
   }
 }
