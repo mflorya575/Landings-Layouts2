@@ -677,7 +677,7 @@ body {
 }
 
 .mobile-menu__tent {
-  width: 50px;
+  width: 44px;
 }
 
 .mobile-menu__t1 {
@@ -782,7 +782,7 @@ body {
   border-radius: 5px;
   margin-bottom: 30px;
   width: 402px;
-  height: 400px;
+  height: 330px;
 }
 
 .second-section__text1 {
@@ -816,7 +816,7 @@ body {
   margin-right: 78px;
   border-radius: 5px;
   width: 570px;
-  height: 650px;
+  height: 530px;
 }
 
 .third-section__title {
@@ -1116,6 +1116,7 @@ body {
   .third-section__img {
     display: block;
     margin: 0 auto;
+    height: 500px;
   }
   .third-section__title {
     text-align: center;
@@ -1200,8 +1201,8 @@ body {
     margin-bottom: 0;
   }
   .second-section__card img {
-    width: 390px;
-    height: 360px;
+    width: 350px;
+    height: 330px;
   }
   .team-section__modal {
     width: 290px;
@@ -1261,11 +1262,11 @@ body {
   }
   .second-section__card img {
     width: 260px;
-    height: 250px;
+    height: 220px;
   }
   .third-section__img {
     width: 260px;
-    height: 310px;
+    height: 220px;
   }
   .second-section {
     margin-bottom: 50px;
@@ -1328,6 +1329,6 @@ body {
     width: 40px;
   }
   .mobile-menu__tent {
-    width: 37px;
+    width: 34px;
   }
 }
