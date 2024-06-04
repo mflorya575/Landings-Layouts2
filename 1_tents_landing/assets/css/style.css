@@ -604,7 +604,7 @@ body {
 }
 
 .header__tel-icon {
-  background: #e4e4e4;
+  background: #c3c0c0;
   padding: 10px;
   border-radius: 50%;
 }
@@ -701,7 +701,7 @@ body {
 }
 
 .mobile-menu__tel-tel {
-  background: #e4e4e4;
+  background: #c3c0c0;
   padding: 20px;
   border-radius: 50%;
 }
@@ -1338,5 +1338,23 @@ body {
   }
   .mobile-menu__tent {
     width: 34px;
+  }
+}
+
+@media (max-width: 320px) {
+  .mobile-menu__button {
+    width: 34px;
+  }
+  .mobile-menu__tent {
+    width: 27px;
+  }
+  .mobile-menu__block-tent {
+    gap: 5px;
+  }
+  .mobile-menu__t1 {
+    font-size: 16px;
+  }
+  .mobile-menu__tel-tel {
+    padding: 9px;
   }
 }
