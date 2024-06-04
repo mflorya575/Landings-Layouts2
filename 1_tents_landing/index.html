@@ -210,6 +210,24 @@
             lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
         });
     </script>
+    <script>
+        let lastScrollTop2 = 0;
+const header2 = document.querySelector('.mobile-menu');
+
+window.addEventListener('scroll', () => {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop2) {
+        // Прокрутка вниз
+        header2.style.top = '-100px'; // Скрыть меню
+    } else {
+        // Прокрутка вверх
+        header2.style.top = '0'; // Показать меню
+    }
+
+    lastScrollTop2 = scrollTop <= 0 ? 0 : scrollTop; // Для мобильных устройств или отрицательной прокрутки
+});
+    </script>
 
 
     <script>
