@@ -710,6 +710,8 @@ body {
   width: 55px;
 }
 
+/* .mobile-menu__block--active
+    display: block */
 .main-section {
   margin-top: 66px;
   margin-bottom: 100px;
@@ -764,9 +766,11 @@ body {
 
 .second-section {
   margin-bottom: 124px;
+  background: #f1f1f1;
 }
 
 .second-section__title {
+  padding-top: 30px;
   font-family: 'Circe';
   color: #272727;
   font-size: 50px;
@@ -894,7 +898,12 @@ body {
 }
 
 .sixth-section {
-  margin-bottom: 140px;
+  padding-bottom: 140px;
+  background: #f1f1f1;
+}
+
+.sixth-section__wrapper {
+  padding-top: 30px;
 }
 
 .sixth-section__title {
@@ -1183,7 +1192,7 @@ body {
   }
   .third-section__img {
     width: 400px;
-    height: 500px;
+    height: 330px;
   }
   .sixth-section__iframe {
     width: 400px;
@@ -1210,7 +1219,7 @@ body {
   }
   .second-section__card img {
     width: 350px;
-    height: 330px;
+    height: 240px;
   }
   .team-section__modal {
     width: 290px;
@@ -1299,7 +1308,7 @@ body {
     margin-bottom: 50px;
   }
   .sixth-section {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
   .sixth-section__title {
     font-size: 32px;
