@@ -1554,6 +1554,9 @@ main {
     letter-spacing: 9px;
     padding: 20px 30px;
   }
+  .individual .lk__block img {
+    border-radius: 20px;
+  }
 }
 @media (max-width: 550px) {
   .cost__label-title {
@@ -2300,7 +2303,7 @@ main {
 }
 .form-page__panel {
   position: absolute;
-  top: calc(100% + 20px);
+  top: 0; /* top: calc(100% + 20px); */
   left: 0;
   z-index: 400;
   display: -webkit-box;

@@ -137,7 +137,7 @@
 
     &__panel {
         position: absolute;
-        top: calc(100% + 20px);
+        top: 0; /* top: calc(100% + 20px); */
         left: 0;
         z-index: 400;
         display: flex;
