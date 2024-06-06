@@ -175,3 +175,25 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .header-lk .menu__icon {
+        width: 32px;
+    }
+    .header-lk .menu__list li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 470px) {
+    .header-lk .menu__icon {
+        width: 26px;
+    }
+    .header-lk .menu__list {
+        gap: 20px;
+    }
+    .header-lk .menu__list li {
+        font-size: 14px;
+    }
+}
+
