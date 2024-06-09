@@ -14,19 +14,19 @@
 <body>
     <div class="wrapper" id="root">
 
-        <header class="header header-lk">
-            <div class="header__container header-lk__container">
+        <header class="header">
+            <div class="header__container">
 
                 <div class="header-lk__wrap">
 
-                    <a href="./lk-teache.html">
+                    <a href="./lk-admin.html">
                         <svg width="40" height="16" viewBox="0 0 40 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M0.292893 7.29289C-0.0976295 7.68341 -0.0976296 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.928929C7.68054 0.538405 7.04738 0.538405 6.65685 0.928929L0.292893 7.29289ZM40 7L1 7L1 9L40 9L40 7Z"
                                 fill="#587202" />
                         </svg>
                     </a>
-                    <a class="header__logo" href="./lk-teache.html">
+                    <a class="header__logo" href="./lk-admin.html">
                         <svg width="119" height="142" viewBox="0 0 119 142" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -64,20 +64,24 @@
                                 fill="#9BB189" />
                         </svg>
                     </a>
-
+                
                 </div>
 
                 <div class="menu">
-                    <nav class="header-lk__body menu__body _vector">
+                    <nav class="menu__body _vector">
                         <ul class="menu__list">
                             <li class="menu__item">
                                 Родителям
                                 <div class="menu__submenu _vector" style="display: none;">
                                     <ul class="menu__submenu-box">
-                                        <li><a href="./file/welcome-to-our-school.pdf"  >Добро пожаловать в нашу школу!</a></li>
-                                        <li><a href="./file/how-our-school-works.pdf"  >Как работает наша школа?</a></li>
-                                        <li><a href="#!"  >Как осуществляется родительский контроль?</a></li>
-                                        <li><a href="#!"  >Размер и способы оплаты</a></li>
+                                        <li><a href="{{ asset('assets/file/welcome-to-our-school.pdf')}}" target="_blank">Добро пожаловать
+                                                в нашу
+                                                школу!</a></li>
+                                        <li><a href="{{ asset('assets/file/how-our-school-works.pdf')}}" target="_blank">Как работает наша
+                                                школа?</a></li>
+                                        <li><a href="#!" target="_blank">Как осуществляется родительский контроль?</a>
+                                        </li>
+                                        <li><a href="#!" target="_blank">Размер и способы оплаты</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -85,10 +89,13 @@
                                 Школьникам
                                 <div class="menu__submenu _vector _students" style="display: none;">
                                     <ul class="menu__submenu-box">
-                                        <li><a href="./file/welcome-to-our-school.pdf">Добро пожаловать в нашу школу!</a></li>
-                                        <li><a href="./file/how-our-school-works.pdf">Как работает наша школа?</a></li>
-                                        <li><a href="#!">Что вам даст наша школа?</a></li>
-                                        <li><a href="#!">Наши рекомендации</a></li>
+                                        <li><a href="{{ asset('assets/file/welcome-to-our-school.pdf')}}" target="_blank">Добро пожаловать
+                                                в нашу
+                                                школу!</a></li>
+                                        <li><a href="{{ asset('assets/file/how-our-school-works.pdf')}}" target="_blank">Как работает наша
+                                                школа?</a></li>
+                                        <li><a href="#!" target="_blank">Что вам даст наша школа?</a></li>
+                                        <li><a href="#!" target="_blank">Наши рекомендации</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -96,11 +103,15 @@
                                 Учителям
                                 <div class="menu__submenu _vector _teachers" style="display: none;">
                                     <ul class="menu__submenu-box">
-                                        <li><a href="./file/welcome-to-our-school.pdf"  >Добро пожаловать в нашу школу!</a></li>
+                                        <li><a href="{{ asset('assets/file/welcome-to-our-school.pdf')}}" target="_blank">Добро пожаловать
+                                                в нашу
+                                                школу!</a></li>
                                         <li data-teachers-reg>Регистрация</li>
-                                        <li><a href="./file/how-our-school-works.pdf"  >Как работает наша школа?</a></li>
-                                        <li><a href="./file/reg-teacher.pdf">Как зарегистрироваться?</a></li>
-                                        <li><a href="#!">Как работать в личном кабинете?</a></li>
+                                        <li><a href="{{ asset('assets/file/how-our-school-works.pdf')}}" target="_blank">Как работает наша
+                                                школа?</a></li>
+                                        <li><a href="{{ asset('assets/file/reg-teacher.pdf" target')}}="_blank">Как зарегистрироваться?</a>
+                                        </li>
+                                        <li><a href="#!" target="_blank">Как работать в личном кабинете?</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -109,61 +120,63 @@
                                 <div class="menu__submenu _vector _study" style="display: none;">
                                     <ul class="menu__submenu-box">
                                         <li>Учёба в школе</li>
-                                        <li><a href="./egeSearchForm.html">Подготовка к егэ</a></li>
-                                        <li><a href="./olimpicSearchForm.html">Подготовка к олимпиаде</a></li>
+                                        <li><a href="./egeSearchForm.html" target="_blank">Подготовка к егэ</a></li>
+                                        <li><a href="./olimpicSearchForm.html" target="_blank">Подготовка к
+                                                олимпиаде</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="menu__item">
                                 Предметы
-                                <div  class="menu__submenu _vector regions" style="display: none;">
+                                <div class="menu__submenu _vector regions" style="display: none;">
                                     <div class="menu__submenu-box">
                                         <div class="regions__wrap">
                                             <ul>
                                                 <li>Все предметы</li>
-                                                <li>русский язык</li>
-                                                <li>родной язык</li>
-                                                <li>чистописание</li>
+                                                <li><a href="#!" target="_blank">Русский язык</a></li>
+                                                <li><a href="#!" target="_blank">Родной язык</a></li>
+                                                <li><a href="#!" target="_blank">Чистописание</a></li>
                                                 <br>
-                                                <li>родная литература</li>
-                                                <li>литература</li>
-                                                <li>Азбука</li>
-                                                <li>Литературное чтение</li>
+                                                <li><a href="#!" target="_blank">Родная литература</a></li>
+                                                <li><a href="#!" target="_blank">Литература</a></li>
+                                                <li><a href="#!" target="_blank">Азбука</a></li>
+                                                <li><a href="#!" target="_blank">Литературное чтение</a></li>
                                                 <br>
-                                                <li>математика</li>
-                                                <li>алгебра</li>
-                                                <li>геометрия</li>
+                                                <li><a href="#!" target="_blank">Математика</a></li>
+                                                <li><a href="#!" target="_blank">Алгебра</a></li>
+                                                <li><a href="#!" target="_blank">Геометрия</a></li>
                                                 <br>
-                                                <li>Английский язык</li>
-                                                <li>Немецкий язык</li>
-                                                <li>французский язык</li>
-                                                <li>Испанский язык</li>
-                                                <li>Китайский язык</li>
+                                                <li><a href="#!" target="_blank">Английский язык</a></li>
+                                                <li><a href="#!" target="_blank">Немецкий язык</a></li>
+                                                <li><a href="#!" target="_blank">Французский язык</a></li>
+                                                <li><a href="#!" target="_blank">Испанский язык</a></li>
+                                                <li><a href="#!" target="_blank">Китайский язык</a></li>
                                                 <br>
-                                                <li>история</li>
-                                                <li>обществознание</li>
-                                                <li>Экономика</li>
+                                                <li><a href="#!" target="_blank">История</a></li>
+                                                <li><a href="#!" target="_blank">Обществознание</a></li>
+                                                <li><a href="#!" target="_blank">Экономика</a></li>
                                             </ul>
                                             <ul>
-                                                <li>химия</li>
-                                                <li>биология</li>
-                                                <li>Ботаника</li>
-                                                <li>физика</li>
-                                                <li>экология</li>
-                                                <li>география</li>
-                                                <li>естествознание</li>
-                                                <li>астрономия</li>
-                                                <li>окружающий мир</li>
+                                                <li><a href="#!" target="_blank">Химия</a></li>
+                                                <li><a href="#!" target="_blank">Биология</a></li>
+                                                <li><a href="#!" target="_blank">Ботаника</a></li>
+                                                <li><a href="#!" target="_blank">Физика</a></li>
+                                                <li><a href="#!" target="_blank">Экология</a></li>
+                                                <li><a href="#!" target="_blank">География</a></li>
+                                                <li><a href="#!" target="_blank">Естествознание</a></li>
+                                                <li><a href="#!" target="_blank">Астрономия</a></li>
+                                                <li><a href="#!" target="_blank">Окружающий мир</a></li>
                                                 <br>
-                                                <li>Информатика</li>
-                                                <li>Алгоритмическое программирование</li>
-                                                <li>Шахматы</li>
-                                                <li>музыка</li>
-                                                <li>основы безопасности жизнедеятельности</li>
+                                                <li><a href="#!" target="_blank">Информатика</a></li>
+                                                <li><a href="#!" target="_blank">Компьютерное программирование</a></li>
+                                                <li><a href="#!" target="_blank">Шахматы</a></li>
+                                                <li><a href="#!" target="_blank">Музыка</a></li>
+                                                <li><a href="#!" target="_blank">Основы безопасности
+                                                        жизнедеятельности</a></li>
                                                 <br>
                                                 <li>Другие услуги</li>
-                                                <li>“Дедушка на час”</li>
-                                                <li>“Бабушка на час”</li>
+                                                <li><a href="#!" target="_blank">“Дедушка на час”</a></li>
+                                                <li><a href="#!" target="_blank">“Бабушка на час”</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -171,100 +184,105 @@
                             </li>
                             <li class="menu__item">
                                 Регионы
-                                <div  class="menu__submenu _vector regions" style="display: none;">
+                                <div class="menu__submenu _vector regions" style="display: none;">
                                     <div class="menu__submenu-box">
                                         <div class="regions__wrap">
                                             <ul>
                                                 <li>Все регионы</li>
-                                                <li>Алтайский край</li>
-                                                <li>Амурская область</li>
-                                                <li>Архангельская область</li>
-                                                <li>Астраханская область</li>
-                                                <li>Белгородская область</li>
-                                                <li>Брянская область</li>
-                                                <li>Владимирская область</li>
-                                                <li>Волгоградская область</li>
-                                                <li>Вологодская область</li>
-                                                <li>г. Москва</li>
-                                                <li>г. Санкт-Петербург</li>
-                                                <li>г. Севастополь</li>
-                                                <li>Донецкая Народная Республика</li>
-                                                <li>Еврейская автономная область</li>
-                                                <li>Забайкальский край</li>
-                                                <li>Запорожская область</li>
-                                                <li>Ивановская область</li>
-                                                <li>Иркутская область</li>
-                                                <li>Кабардино-Балкарская Республика</li>
-                                                <li>Калининградская область</li>
-                                                <li>Калужская область</li>
-                                                <li>Камчатский край</li>
-                                                <li>Карачаево-Черкесская Республика</li>
-                                                <li>Кемеровская область – Кузбасс</li>
-                                                <li>Кировская область</li>
-                                                <li>Костромская область</li>
-                                                <li>Краснодарский край</li>
-                                                <li>Красноярский край</li>
-                                                <li>Курганская область</li>
-                                                <li>Курская область</li>
-                                                <li>Ленинградская область</li>
-                                                <li>Липецкая область</li>
-                                                <li>Луганская Народная Республика</li>
-                                                <li>Магаданская область</li>
-                                                <li>Московская область</li>
-                                                <li>Мурманская область</li>
-                                                <li>Ненецкий автономный округ</li>
-                                                <li>Нижегородская область</li>
-                                                <li>Новгородская область</li>
-                                                <li>Новосибирская область</li>
-                                                <li>Омская область</li>
-                                                <li>Оренбургская область</li>
-                                                <li>Орловская область</li>
-                                                <li>Пензенская область</li>
-                                                <li>Пермский край</li>
+                                                <li><a href="#" target="_blank">Алтайский край</a></li>
+                                                <li><a href="#" target="_blank">Амурская область</a></li>
+                                                <li><a href="#" target="_blank">Архангельская область</a></li>
+                                                <li><a href="#" target="_blank">Астраханская область</a></li>
+                                                <li><a href="#" target="_blank">Белгородская область</a></li>
+                                                <li><a href="#" target="_blank">Брянская область</a></li>
+                                                <li><a href="#" target="_blank">Владимирская область</a></li>
+                                                <li><a href="#" target="_blank">Волгоградская область</a></li>
+                                                <li><a href="#" target="_blank">Вологодская область</a></li>
+                                                <li><a href="#" target="_blank">г. Москва</a></li>
+                                                <li><a href="#" target="_blank">г. Санкт-Петербург</a></li>
+                                                <li><a href="#" target="_blank">г. Севастополь</a></li>
+                                                <li><a href="#" target="_blank">Донецкая Народная Республика</a></li>
+                                                <li><a href="#" target="_blank">Еврейская автономная область</a></li>
+                                                <li><a href="#" target="_blank">Забайкальский край</a></li>
+                                                <li><a href="#" target="_blank">Запорожская область</a></li>
+                                                <li><a href="#" target="_blank">Ивановская область</a></li>
+                                                <li><a href="#" target="_blank">Иркутская область</a></li>
+                                                <li><a href="#" target="_blank">Кабардино-Балкарская Республика</a></li>
+                                                <li><a href="#" target="_blank">Калининградская область</a></li>
+                                                <li><a href="#" target="_blank">Калужская область</a></li>
+                                                <li><a href="#" target="_blank">Камчатский край</a></li>
+                                                <li><a href="#" target="_blank">Карачаево-Черкесская Республика</a></li>
+                                                <li><a href="#" target="_blank">Кемеровская область – Кузбасс</a></li>
+                                                <li><a href="#" target="_blank">Кировская область</a></li>
+                                                <li><a href="#" target="_blank">Костромская область</a></li>
+                                                <li><a href="#" target="_blank">Краснодарский край</a></li>
+                                                <li><a href="#" target="_blank">Красноярский край</a></li>
+                                                <li><a href="#" target="_blank">Курганская область</a></li>
+                                                <li><a href="#" target="_blank">Курская область</a></li>
+                                                <li><a href="#" target="_blank">Ленинградская область</a></li>
+                                                <li><a href="#" target="_blank">Липецкая область</a></li>
+                                                <li><a href="#" target="_blank">Луганская Народная Республика</a></li>
+                                                <li><a href="#" target="_blank">Магаданская область</a></li>
+                                                <li><a href="#" target="_blank">Московская область</a></li>
+                                                <li><a href="#" target="_blank">Мурманская область</a></li>
+                                                <li><a href="#" target="_blank">Ненецкий автономный округ</a></li>
+                                                <li><a href="#" target="_blank">Нижегородская область</a></li>
+                                                <li><a href="#" target="_blank">Новгородская область</a></li>
+                                                <li><a href="#" target="_blank">Новосибирская область</a></li>
+                                                <li><a href="#" target="_blank">Омская область</a></li>
+                                                <li><a href="#" target="_blank">Оренбургская область</a></li>
+                                                <li><a href="#" target="_blank">Орловская область</a></li>
+                                                <li><a href="#" target="_blank">Пензенская область</a></li>
+                                                <li><a href="#" target="_blank">Пермский край</a></li>
                                             </ul>
                                             <ul>
-                                                <li>Приморский край</li>
-                                                <li>Псковская область</li>
-                                                <li>Республика Адыгея (Адыгея)</li>
-                                                <li>Республика Алтай</li>
-                                                <li>Республика Башкортостан</li>
-                                                <li>Республика Бурятия</li>
-                                                <li>Республика Дагестан</li>
-                                                <li>Республика Ингушетия</li>
-                                                <li>Республика Калмыкия</li>
-                                                <li>Республика Карелия</li>
-                                                <li>Республика Коми</li>
-                                                <li>Республика Крым</li>
-                                                <li>Республика Марий Эл</li>
-                                                <li>Республика Мордовия</li>
-                                                <li>Республика Саха (Якутия)</li>
-                                                <li>Республика Северная Осетия – Алания</li>
-                                                <li>Республика Татарстан (Татарстан)</li>
-                                                <li>Республика Тыва</li>
-                                                <li>Республика Хакасия</li>
-                                                <li>Ростовская область</li>
-                                                <li>Рязанская область</li>
-                                                <li>Самарская область</li>
-                                                <li>Саратовская область</li>
-                                                <li>Сахалинская область</li>
-                                                <li>Свердловская область</li>
-                                                <li>Смоленская область</li>
-                                                <li>Ставропольский край</li>
-                                                <li>Тамбовская область</li>
-                                                <li>Тверская область</li>
-                                                <li>Томская область</li>
-                                                <li>Тюменская область</li>
-                                                <li>Удмуртская Республика</li>
-                                                <li>Ульяновская область</li>
-                                                <li>Хабаровский край</li>
-                                                <li>Ханты-Мансийский автономный округ – Югра</li>
-                                                <li>Херсонская область</li>
-                                                <li>Челябинская область</li>
-                                                <li>Чеченская Республика</li>
-                                                <li>Чувашская Республика – Чувашия</li>
-                                                <li>Чукотский автономный округ</li>
-                                                <li>Ямало-Ненецкий автономный округ</li>
-                                                <li>Ярославская область</li>
+                                                <li><a href="#" target="_blank">Приморский край</a></li>
+                                                <li><a href="#" target="_blank">Псковская область</a></li>
+                                                <li><a href="#" target="_blank">Республика Адыгея (Адыгея)</a></li>
+                                                <li><a href="#" target="_blank">Республика Алтай</a></li>
+                                                <li><a href="#" target="_blank">Республика Башкортостан</a></li>
+                                                <li><a href="#" target="_blank">Республика Бурятия</a></li>
+                                                <li><a href="#" target="_blank">Республика Дагестан</a></li>
+                                                <li><a href="#" target="_blank">Республика Ингушетия</a></li>
+                                                <li><a href="#" target="_blank">Республика Калмыкия</a></li>
+                                                <li><a href="#" target="_blank">Республика Карелия</a></li>
+                                                <li><a href="#" target="_blank">Республика Коми</a></li>
+                                                <li><a href="#" target="_blank">Республика Крым</a></li>
+                                                <li><a href="#" target="_blank">Республика Марий Эл</a></li>
+                                                <li><a href="#" target="_blank">Республика Мордовия</a></li>
+                                                <li><a href="#" target="_blank">Республика Саха (Якутия)</a></li>
+                                                <li><a href="#" target="_blank">Республика Северная Осетия – Алания</a>
+                                                </li>
+                                                <li><a href="#" target="_blank">Республика Татарстан (Татарстан)</a>
+                                                </li>
+                                                <li><a href="#" target="_blank">Республика Тыва</a></li>
+                                                <li><a href="#" target="_blank">Республика Хакасия</a></li>
+                                                <li><a href="#" target="_blank">Ростовская область</a></li>
+                                                <li><a href="#" target="_blank">Рязанская область</a></li>
+                                                <li><a href="#" target="_blank">Самарская область</a></li>
+                                                <li><a href="#" target="_blank">Саратовская область</a></li>
+                                                <li><a href="#" target="_blank">Сахалинская область</a></li>
+                                                <li><a href="#" target="_blank">Свердловская область</a></li>
+                                                <li><a href="#" target="_blank">Смоленская область</a></li>
+                                                <li><a href="#" target="_blank">Ставропольский край</a></li>
+                                                <li><a href="#" target="_blank">Тамбовская область</a></li>
+                                                <li><a href="#" target="_blank">Тверская область</a></li>
+                                                <li><a href="#" target="_blank">Томская область</a></li>
+                                                <li><a href="#" target="_blank">Тюменская область</a></li>
+                                                <li><a href="#" target="_blank">Удмуртская Республика</a></li>
+                                                <li><a href="#" target="_blank">Ульяновская область</a></li>
+                                                <li><a href="#" target="_blank">Хабаровский край</a></li>
+                                                <li><a href="#" target="_blank">Ханты-Мансийский автономный округ –
+                                                        Югра</a></li>
+                                                <li><a href="#" target="_blank">Херсонская область</a></li>
+                                                <li><a href="#" target="_blank">Челябинская область</a></li>
+                                                <li><a href="#" target="_blank">Чеченская Республика</a></li>
+                                                <li><a href="#" target="_blank">Чувашская Республика – Чувашия</a></li>
+                                                <li><a href="#" target="_blank">Чукотский автономный округ</a></li>
+                                                <li><a href="#" target="_blank">Ямало-Ненецкий автономный округ</a></li>
+                                                <li><a href="#" target="_blank">Ярославская область</a></li>
+                                                <br>
+                                                <li><a href="#!" target="_blank">Республика Беларусь</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -272,7 +290,7 @@
                             </li>
                             <li class="menu__item">
                                 Ещё
-                                <div  class="menu__submenu _vector _teachers" style="display: none;">
+                                <div class="menu__submenu _vector _teachers" style="display: none;">
                                     <ul class="menu__submenu-box">
                                         <li><a href="#!">Какими онлайн-инструментами мы пользуемся?</a></li>
                                         <li><a href="#!">Облачные хранилища</a></li>
@@ -281,12 +299,10 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="menu__item"><a href="./lk-teache.html">Личный кабинет</a></li>
+                            <li class="menu__item"><a href="/login">Личный кабинет</a></li>
                         </ul>
                     </nav>
-                    <button type="button" class="header-lk__icon menu__icon icon-menu">
-                        <span></span>
-                        <span></span>
+                    <button type="button" class="menu__icon icon-menu">
                         <span></span>
                     </button>
                 </div>

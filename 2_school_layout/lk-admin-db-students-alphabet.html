@@ -14,8 +14,8 @@
 <body>
     <div class="wrapper" id="root">
 
-        <header class="header header-lk">
-            <div class="header__container header-lk__container">
+        <header class="header">
+            <div class="header__container">
 
                 <div class="header-lk__wrap">
 
@@ -64,7 +64,7 @@
                                 fill="#9BB189" />
                         </svg>
                     </a>
-
+                
                 </div>
 
                 <div class="menu">
@@ -74,10 +74,14 @@
                                 Родителям
                                 <div class="menu__submenu _vector" style="display: none;">
                                     <ul class="menu__submenu-box">
-                                        <li><a href="./file/welcome-to-our-school.pdf"  >Добро пожаловать в нашу школу!</a></li>
-                                        <li><a href="./file/how-our-school-works.pdf"  >Как работает наша школа?</a></li>
-                                        <li><a href="#!"  >Как осуществляется родительский контроль?</a></li>
-                                        <li><a href="#!"  >Размер и способы оплаты</a></li>
+                                        <li><a href="{{ asset('assets/file/welcome-to-our-school.pdf')}}" target="_blank">Добро пожаловать
+                                                в нашу
+                                                школу!</a></li>
+                                        <li><a href="{{ asset('assets/file/how-our-school-works.pdf')}}" target="_blank">Как работает наша
+                                                школа?</a></li>
+                                        <li><a href="#!" target="_blank">Как осуществляется родительский контроль?</a>
+                                        </li>
+                                        <li><a href="#!" target="_blank">Размер и способы оплаты</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -85,10 +89,13 @@
                                 Школьникам
                                 <div class="menu__submenu _vector _students" style="display: none;">
                                     <ul class="menu__submenu-box">
-                                        <li><a href="./file/welcome-to-our-school.pdf">Добро пожаловать в нашу школу!</a></li>
-                                        <li><a href="./file/how-our-school-works.pdf">Как работает наша школа?</a></li>
-                                        <li><a href="#!">Что вам даст наша школа?</a></li>
-                                        <li><a href="#!">Наши рекомендации</a></li>
+                                        <li><a href="{{ asset('assets/file/welcome-to-our-school.pdf')}}" target="_blank">Добро пожаловать
+                                                в нашу
+                                                школу!</a></li>
+                                        <li><a href="{{ asset('assets/file/how-our-school-works.pdf')}}" target="_blank">Как работает наша
+                                                школа?</a></li>
+                                        <li><a href="#!" target="_blank">Что вам даст наша школа?</a></li>
+                                        <li><a href="#!" target="_blank">Наши рекомендации</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -96,11 +103,15 @@
                                 Учителям
                                 <div class="menu__submenu _vector _teachers" style="display: none;">
                                     <ul class="menu__submenu-box">
-                                        <li><a href="./file/welcome-to-our-school.pdf"  >Добро пожаловать в нашу школу!</a></li>
+                                        <li><a href="{{ asset('assets/file/welcome-to-our-school.pdf')}}" target="_blank">Добро пожаловать
+                                                в нашу
+                                                школу!</a></li>
                                         <li data-teachers-reg>Регистрация</li>
-                                        <li><a href="./file/how-our-school-works.pdf"  >Как работает наша школа?</a></li>
-                                        <li><a href="./file/reg-teacher.pdf">Как зарегистрироваться?</a></li>
-                                        <li><a href="#!">Как работать в личном кабинете?</a></li>
+                                        <li><a href="{{ asset('assets/file/how-our-school-works.pdf')}}" target="_blank">Как работает наша
+                                                школа?</a></li>
+                                        <li><a href="{{ asset('assets/file/reg-teacher.pdf" target')}}="_blank">Как зарегистрироваться?</a>
+                                        </li>
+                                        <li><a href="#!" target="_blank">Как работать в личном кабинете?</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -109,8 +120,9 @@
                                 <div class="menu__submenu _vector _study" style="display: none;">
                                     <ul class="menu__submenu-box">
                                         <li>Учёба в школе</li>
-                                        <li><a href="./egeSearchForm.html">Подготовка к егэ</a></li>
-                                        <li><a href="./olimpicSearchForm.html">Подготовка к олимпиаде</a></li>
+                                        <li><a href="./egeSearchForm.html" target="_blank">Подготовка к егэ</a></li>
+                                        <li><a href="./olimpicSearchForm.html" target="_blank">Подготовка к
+                                                олимпиаде</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -159,7 +171,8 @@
                                                 <li><a href="#!" target="_blank">Компьютерное программирование</a></li>
                                                 <li><a href="#!" target="_blank">Шахматы</a></li>
                                                 <li><a href="#!" target="_blank">Музыка</a></li>
-                                                <li><a href="#!" target="_blank">Основы безопасности жизнедеятельности</a></li>
+                                                <li><a href="#!" target="_blank">Основы безопасности
+                                                        жизнедеятельности</a></li>
                                                 <br>
                                                 <li>Другие услуги</li>
                                                 <li><a href="#!" target="_blank">“Дедушка на час”</a></li>
@@ -238,8 +251,10 @@
                                                 <li><a href="#" target="_blank">Республика Марий Эл</a></li>
                                                 <li><a href="#" target="_blank">Республика Мордовия</a></li>
                                                 <li><a href="#" target="_blank">Республика Саха (Якутия)</a></li>
-                                                <li><a href="#" target="_blank">Республика Северная Осетия – Алания</a></li>
-                                                <li><a href="#" target="_blank">Республика Татарстан (Татарстан)</a></li>
+                                                <li><a href="#" target="_blank">Республика Северная Осетия – Алания</a>
+                                                </li>
+                                                <li><a href="#" target="_blank">Республика Татарстан (Татарстан)</a>
+                                                </li>
                                                 <li><a href="#" target="_blank">Республика Тыва</a></li>
                                                 <li><a href="#" target="_blank">Республика Хакасия</a></li>
                                                 <li><a href="#" target="_blank">Ростовская область</a></li>
@@ -257,7 +272,8 @@
                                                 <li><a href="#" target="_blank">Удмуртская Республика</a></li>
                                                 <li><a href="#" target="_blank">Ульяновская область</a></li>
                                                 <li><a href="#" target="_blank">Хабаровский край</a></li>
-                                                <li><a href="#" target="_blank">Ханты-Мансийский автономный округ – Югра</a></li>
+                                                <li><a href="#" target="_blank">Ханты-Мансийский автономный округ –
+                                                        Югра</a></li>
                                                 <li><a href="#" target="_blank">Херсонская область</a></li>
                                                 <li><a href="#" target="_blank">Челябинская область</a></li>
                                                 <li><a href="#" target="_blank">Чеченская Республика</a></li>
@@ -274,7 +290,7 @@
                             </li>
                             <li class="menu__item">
                                 Ещё
-                                <div  class="menu__submenu _vector _teachers" style="display: none;">
+                                <div class="menu__submenu _vector _teachers" style="display: none;">
                                     <ul class="menu__submenu-box">
                                         <li><a href="#!">Какими онлайн-инструментами мы пользуемся?</a></li>
                                         <li><a href="#!">Облачные хранилища</a></li>
@@ -283,15 +299,14 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="menu__item"><a href="./lk-teache.html">Личный кабинет</a></li>
+                            <li class="menu__item"><a href="/login">Личный кабинет</a></li>
                         </ul>
                     </nav>
-                    <button type="button" class="header-lk__icon menu__icon icon-menu">
-                        <span></span>
-                        <span></span>
+                    <button type="button" class="menu__icon icon-menu">
                         <span></span>
                     </button>
                 </div>
+
             </div>
         </header>
 

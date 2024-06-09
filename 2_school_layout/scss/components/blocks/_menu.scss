@@ -331,10 +331,13 @@
 
 @media (max-width: 1471px) {
     .menu__list {
-        gap: 25px;
+        gap: 15px;
+    }
+    .menu__item {
+        font-size: 20px;
     }
     .header__container {
-        max-width: 1400px;
+        max-width: 1130px;
         gap: 5px;
     }
 }
@@ -348,8 +351,8 @@
     }
 }
 
-@media (max-width: 1043px) {
+@media (max-width: 1106px) {
     .menu__item {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
