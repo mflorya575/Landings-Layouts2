@@ -1295,6 +1295,15 @@ main {
   }
 }
 @media (max-width: 768px) {
+  .lkk__title {
+    font-size: 64px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .writeParents__list-item .lk__block {
+    width: 110px;
+    height: 130px;
+  }
   .lk__box .cost__add {
     font-size: 16px;
     padding: 15px 0;
@@ -1590,6 +1599,9 @@ main {
   }
 }
 @media (max-width: 550px) {
+  .lkk__title {
+    font-size: 32px;
+  }
   .cost__label-title {
     font-size: 14px;
   }
