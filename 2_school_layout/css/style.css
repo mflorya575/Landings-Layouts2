@@ -1963,7 +1963,7 @@ main {
   display: none;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 992px) {
   .menu {
     position: relative;
   }
@@ -2080,7 +2080,7 @@ main {
     gap: 30px;
   }
 }
-@media screen and (max-width: 1500px) and (max-width: 768px) {
+@media screen and (max-width: 992px) and (max-width: 768px) {
   .menu__list li {
     font-size: 24px;
     cursor: pointer;
@@ -2089,7 +2089,7 @@ main {
     margin-bottom: 0;
   }
 }
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 992px) {
   .menu ._vector::after {
     display: none;
   }
@@ -2127,7 +2127,7 @@ main {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 1500px) and (max-width: 768px) {
+@media screen and (max-width: 992px) and (max-width: 768px) {
   .menu__submenu.regions .regions__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2143,6 +2143,28 @@ main {
   }
   .menu__submenu.regions ul li {
     font-size: 20px;
+  }
+}
+@media (max-width: 1471px) {
+  .menu__list {
+    gap: 25px;
+  }
+  .header__container {
+    max-width: 1400px;
+    gap: 5px;
+  }
+}
+@media (max-width: 1242px) {
+  .menu__list {
+    gap: 18px;
+  }
+  .menu__item {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1043px) {
+  .menu__item {
+    font-size: 16px;
   }
 }
 ._label__box {

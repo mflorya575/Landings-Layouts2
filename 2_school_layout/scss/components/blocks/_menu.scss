@@ -145,7 +145,7 @@
     }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 992px) {
     .menu {
         position: relative;
 
@@ -326,5 +326,30 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 1471px) {
+    .menu__list {
+        gap: 25px;
+    }
+    .header__container {
+        max-width: 1400px;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 1242px) {
+    .menu__list {
+        gap: 18px;
+    }
+    .menu__item {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1043px) {
+    .menu__item {
+        font-size: 16px;
     }
 }
